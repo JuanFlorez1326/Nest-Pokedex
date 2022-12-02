@@ -3,16 +3,23 @@
 </p>
 
 
-## Installation
+## Install Packages
 
 ```bash
 $ yarn install
 ```
 
-## Lift Database
+## Lift Database With Docker
 ```
 $ docker-compose up -d
 ```
+
+## Rebuild Database With Seed
+```bash
+# development
+http://localhost:3000/api/v2/seed
+```
+
 ## Running the app
 
 ```bash
