@@ -31,5 +31,7 @@ services:
       - 27017:27017
     environment:
       MONGODB_DATABASE: nest-pokemon
-    # volumes:
-    #   - ./mongo:/data/db
+    
+    # Mantener volumen de la base de datos, que no se nos pierda la data 
+    volumes:
+      - ./mongo:/data/db
