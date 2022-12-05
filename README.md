@@ -20,6 +20,20 @@ $ docker-compose up -d
 http://localhost:3000/api/v2/seed
 ```
 
+## Docker
+```bash
+# Build
+$ docker-compose -f docker-compose.prod.yaml --env-file .env.prod up --build
+
+# Run
+$ docker-compose -f docker-compose.prod.yaml --env-file .env.prod up
+
+# Note
+Por defecto, docker-compose usa el archivo .env, por lo que si tienen el archivo .env y lo configuran con sus variables de entorno de producción, usar:
+
+$ docker-compose -f docker-compose.prod.yaml up --build
+```
+
 ## Running the app
 
 ```bash
